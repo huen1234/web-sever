@@ -34,7 +34,6 @@ weatherform.addEventListener('submit', (e) => {
 
     msgone.textContent = 'Loading...'
     msgtwo.textContent = ' '
-    console.log("angus")
     const location = search.value
     fetch('http://localhost:3000/weather?address=' + location).then((response) => {
         response.json().then((data) => {
